@@ -1,14 +1,13 @@
-package lowleveldesigns.snakeandladder.model;
+package snakeandladdergame.model;
 
 import java.util.Objects;
 
-public class Ladder {
+public class Snake {
 
-    private int position;
+    int position;
+    int nextPosition;
 
-    private int nextPosition;
-
-    public Ladder(int position, int nextPosition) {
+    public Snake(int position, int nextPosition) {
         this.position = position;
         this.nextPosition = nextPosition;
     }
@@ -25,8 +24,8 @@ public class Ladder {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Ladder ladder = (Ladder) o;
-        return position == ladder.position && nextPosition == ladder.nextPosition;
+        Snake snake = (Snake) o;
+        return position == snake.position && nextPosition == snake.nextPosition;
     }
 
     @Override

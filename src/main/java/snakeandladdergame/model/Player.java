@@ -1,4 +1,4 @@
-package lowleveldesigns.snakeandladder.model;
+package snakeandladdergame.model;
 
 public class Player {
 

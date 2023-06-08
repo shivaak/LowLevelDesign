@@ -1,9 +1,9 @@
-package lowleveldesigns.snakeandladder;
+package snakeandladdergame;
 
-import lowleveldesigns.snakeandladder.model.GameBoard;
-import lowleveldesigns.snakeandladder.model.Ladder;
-import lowleveldesigns.snakeandladder.model.Player;
-import lowleveldesigns.snakeandladder.model.Snake;
+import snakeandladdergame.model.GameBoard;
+import snakeandladdergame.model.Ladder;
+import snakeandladdergame.model.Player;
+import snakeandladdergame.model.Snake;
 
 import java.util.HashMap;
 import java.util.LinkedList;

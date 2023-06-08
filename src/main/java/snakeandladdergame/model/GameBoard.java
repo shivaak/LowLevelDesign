@@ -1,8 +1,8 @@
-package lowleveldesigns.snakeandladder.model;
+package snakeandladdergame.model;
 
 import java.util.Map;
 import java.util.Queue;
-import java.util.Set;
+import java.util.Scanner;
 
 public class GameBoard {
     private int boardSize;
@@ -24,6 +24,11 @@ public class GameBoard {
     public void startGame(){
         while(playerQueue.size()>1){
             Player player = playerQueue.poll();
+            System.out.println();
+            Scanner scanner = new Scanner(System.in);
+            System.out.println(String.format("Player %s press any key to roll the dice ..", player.getName()));
+            scanner.nextLine();
+
             int moves = dice.rollDice();
             int nextPosition = player.getPosition() + moves;
 
@@ -53,6 +58,8 @@ public class GameBoard {
             }
 
             playerQueue.offer(player);
+
+            System.out.println("-------------");
         }
     }
 
